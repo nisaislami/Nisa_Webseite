@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 880" role="img" aria-labelledby="title desc">
+  <title id="title">Elegantes Portfolio Profilbild</title>
+  <desc id="desc">Stilisierte Portrait-Illustration in warmen Beige- und Rosatoenen.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ead7cd"/>
+      <stop offset="1" stop-color="#f7f1e3"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#30160f"/>
+      <stop offset="1" stop-color="#6e4b45"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#30160f" flood-opacity=".22"/>
+    </filter>
+  </defs>
+  <rect width="720" height="880" rx="34" fill="url(#bg)"/>
+  <circle cx="130" cy="115" r="74" fill="#e4c9d0" opacity=".65"/>
+  <circle cx="610" cy="770" r="112" fill="#b46c72" opacity=".17"/>
+  <g filter="url(#softShadow)">
+    <path d="M210 825c22-163 101-259 153-259s131 96 153 259z" fill="#612b34"/>
+    <path d="M247 839c14-122 64-205 116-205s102 83 116 205z" fill="#f7f1e3" opacity=".92"/>
+    <path d="M217 404c0-161 65-262 152-262 103 0 167 92 167 254 0 96-28 179-50 234-20 50-78 65-122 65-47 0-103-16-123-65-18-43-24-137-24-226z" fill="url(#hair)"/>
+    <path d="M288 363c4-95 48-150 88-150 51 0 93 57 97 150 7 145-29 220-94 220-61 0-98-75-91-220z" fill="#d8a28e"/>
+    <path d="M312 367c-5 28-16 45-31 48-13-86 23-168 92-168 48 0 82 40 93 108-74 8-117-22-154-70 11 33 9 62 0 82z" fill="#30160f"/>
+    <path d="M312 445c12 25 35 40 64 40 28 0 51-15 63-40" fill="none" stroke="#8a4d4d" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="339" cy="397" r="7" fill="#30160f"/>
+    <circle cx="421" cy="397" r="7" fill="#30160f"/>
+    <path d="M378 403c-8 25-13 44-2 48 7 3 18-1 24-6" fill="none" stroke="#a6695c" stroke-width="7" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">Branding Projekt Vorschau</title>
+  <desc id="desc">Abstrakte Vorschau eines eleganten Branding-Projekts.</desc>
+  <rect width="900" height="560" rx="28" fill="#ead7cd"/>
+  <rect x="56" y="54" width="788" height="452" rx="22" fill="#f7f1e3"/>
+  <circle cx="246" cy="238" r="105" fill="#e4c9d0"/>
+  <rect x="408" y="145" width="298" height="22" rx="11" fill="#612b34"/>
+  <rect x="408" y="202" width="380" height="16" rx="8" fill="#b46c72"/>
+  <rect x="408" y="248" width="330" height="16" rx="8" fill="#b46c72" opacity=".72"/>
+  <rect x="408" y="333" width="132" height="58" rx="29" fill="#612b34"/>
+  <rect x="572" y="333" width="132" height="58" rx="29" fill="#e4c9d0"/>
+  <path d="M193 249c41-62 77-83 109-62 35 23 21 91-40 119-48 22-93 4-69-57z" fill="#b46c72"/>
+</svg>

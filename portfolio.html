@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio von Nisa Islami - Projekte">
+  <title>Portfolio | Nisa Islami</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Fixe Hauptnavigation mit CSS-only Burger-Menü -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Hauptnavigation">
+      <a class="brand" href="index.html" aria-label="Zur Startseite">
+        <span class="brand-mark" aria-hidden="true">NI</span>
+        <span class="brand-name">Nisa</span>
+      </a>
+
+      <input class="nav-checkbox" type="checkbox" id="nav-toggle" aria-label="Navigation öffnen">
+      <label class="nav-burger" for="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Menü öffnen</span>
+      </label>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Über mich</a></li>
+        <li><a href="faehigkeiten.html">Fähigkeiten</a></li>
+        <li><a class="active" href="portfolio.html">Portfolio</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="site-main">
+    <!-- Moderne Projektübersicht mit den bereitgestellten Medien -->
+    <section class="page-section portfolio-section" aria-labelledby="portfolio-title">
+      <div class="section-shell">
+        <div class="page-heading">
+          <p class="section-kicker">Meine Projekte</p>
+          <h1 id="portfolio-title">Portfolio</h1>
+          <p>
+            Eine Auswahl meiner Arbeiten mit Fokus auf klare Gestaltung,
+            ruhige Farben und saubere digitale Umsetzung.
+          </p>
+        </div>
+
+        <div class="portfolio-grid portfolio-grid-modern">
+          <article class="project-card project-card-modern project-card-featured">
+            <a class="project-image-link" href="https://sislan.bbc-projects.ch" target="_blank" rel="noopener noreferrer" aria-label="Glaubenspfad Webseite öffnen">
+              <img class="project-image" src="images/screenshot-glaubenspfad.png" width="1885" height="1000" alt="Screenshot der Website Glaubenspfad">
+            </a>
+
+            <div class="project-content">
+              <div class="project-meta">
+                <span>Webseite</span>
+                <span>Responsive Design</span>
+              </div>
+
+              <h2>Glaubenspfad</h2>
+              <p>
+                Im Rahmen eines Projekts im Basislehrjahr habe ich eine Informationswebseite 
+                über den Islam entwickelt. Ziel war es, grundlegende Inhalte verständlich darzustellen 
+                und zur Aufklärung beizutragen.
+
+                Die Webseite enthält Informationen zur Entstehung sowie zu wichtigen Aspekten des Islams. 
+                Zusätzlich habe ich eine Sprachumschaltung (DE/EN) und ein interaktives Quiz integriert.
+
+
+              </p>
+
+              <a class="button project-button" href="https://sislan.bbc-projects.ch" target="_blank" rel="noopener noreferrer">
+                Webseite ansehen
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card project-card-modern">
+            <a class="project-image-link project-image-link-portrait" href="images/painted-with-belief.jpg" target="_blank" rel="noopener noreferrer" aria-label="Painted With Belief Bild öffnen">
+              <img class="project-image project-image-portrait" src="images/painted-with-belief.jpg" width="712" height="1024" alt="Kunstprojekt Painted With Belief">
+            </a>
+
+            <div class="project-content">
+              <div class="project-meta">
+                <span>Kunstprojekt</span>
+                <span>Visual Design</span>
+              </div>
+
+              <h2>Painted With Belief</h2>
+              <p>
+              Dieses Gemälde habe ich als persönliches Geschenk für meinen Onkel gestaltet. 
+              Da ich gerne kreativ arbeite, habe ich das gesamte Design selbst entworfen und umgesetzt. 
+
+              Dabei habe ich grossen Wert auf eine harmonische Gestaltung und eine edle Optik gelegt. 
+              Im Zentrum steht die arabische Kalligrafie "Hasbunallahu wa ni'mal wakeel", was übersetzt 
+              so viel bedeutet wie "Allah genügt uns, und er ist der beste Verwalter".
+              </p>
+
+              <a class="button button-secondary project-button" href="images/painted-with-belief.jpg" target="_blank" rel="noopener noreferrer">
+                Bild ansehen
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer auf allen Unterseiten identisch -->
+  <footer class="site-footer">
+    <p>Kontakt | Social Media | Copyright</p>
+  </footer>
+</body>
+</html>
