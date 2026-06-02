@@ -129,6 +129,8 @@ p {
   height: clamp(2.55rem, calc(var(--header-height) - 0.2rem), 3.15rem);
   max-width: min(12rem, 46vw);
   object-fit: contain;
+  transform: translateX(-0.18rem) scale(2.2);
+  transform-origin: left center;
   filter: drop-shadow(0 0.2rem 0.55rem rgba(84, 17, 31, 0.22));
 }
 
@@ -351,6 +353,192 @@ p {
 .skill-card:focus-within {
   transform: translateY(-0.25rem);
   box-shadow: var(--shadow-soft);
+}
+
+.skill-overview {
+  margin-top: clamp(3rem, 7vw, 5rem);
+}
+
+.skill-overview h2 {
+  margin-bottom: clamp(1.2rem, 3vw, 1.7rem);
+  color: var(--color-button);
+  font-size: clamp(1.75rem, 4vw, 2.45rem);
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.skill-matrix {
+  overflow: visible;
+}
+
+.skill-table {
+  display: block;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.skill-table thead {
+  display: none;
+}
+
+.skill-table tbody {
+  display: grid;
+  gap: 1rem;
+}
+
+.skill-table tr {
+  display: block;
+  padding: 1.1rem;
+  background: rgba(255, 254, 254, 0.96);
+  border: 0.06rem solid rgba(97, 43, 52, 0.08);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, background-color 0.22s ease;
+}
+
+.skill-table tbody tr:hover {
+  background: rgba(255, 254, 254, 1);
+  box-shadow: var(--shadow-soft);
+  transform: translateY(-0.18rem);
+}
+
+.skill-table td {
+  display: grid;
+  grid-template-columns: minmax(7.4rem, 0.4fr) minmax(0, 1fr);
+  gap: 0.8rem;
+  padding: 0.62rem 0;
+  color: var(--color-text);
+  line-height: 1.45;
+  overflow-wrap: break-word;
+  vertical-align: top;
+}
+
+.skill-table td + td {
+  border-top: 0.06rem solid rgba(97, 43, 52, 0.1);
+}
+
+.skill-table td::before {
+  content: attr(data-label);
+  color: var(--color-secondary);
+  font-size: 0.84rem;
+  font-weight: 600;
+}
+
+.skill-table td:first-child {
+  color: var(--color-button);
+  font-weight: 600;
+}
+
+.skill-level-badge {
+  display: inline-flex;
+  width: fit-content;
+  min-height: 1.7rem;
+  padding: 0.32rem 0.72rem;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-bg);
+  border-radius: 999rem;
+  box-shadow: inset 0 0.08rem 0.18rem rgba(255, 255, 255, 0.28), 0 0.22rem 0.45rem rgba(48, 22, 15, 0.14);
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.skill-level-badge-basic {
+  background: linear-gradient(180deg, #d99a35 0%, #b87316 100%);
+}
+
+.skill-level-badge-advanced {
+  background: linear-gradient(180deg, #c77882 0%, var(--color-secondary) 100%);
+}
+
+.skill-level-badge-expert {
+  background: linear-gradient(180deg, var(--color-button) 0%, var(--color-footer) 100%);
+}
+
+@media (min-width: 58rem) {
+  .skill-matrix {
+    overflow: hidden;
+    background: rgba(255, 254, 254, 0.96);
+    border: 0.06rem solid rgba(97, 43, 52, 0.08);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+  }
+
+  .skill-table {
+    display: table;
+    table-layout: fixed;
+  }
+
+  .skill-table thead {
+    display: table-header-group;
+    color: var(--color-bg);
+    background: linear-gradient(180deg, #c1717a 0%, var(--color-secondary) 100%);
+  }
+
+  .skill-table tbody {
+    display: table-row-group;
+  }
+
+  .skill-table tr {
+    display: table-row;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    transform: none;
+  }
+
+  .skill-table tbody tr {
+    transition: background-color 0.22s ease;
+  }
+
+  .skill-table tbody tr:hover {
+    background: rgba(228, 201, 208, 0.24);
+    box-shadow: none;
+    transform: none;
+  }
+
+  .skill-table th,
+  .skill-table td {
+    display: table-cell;
+    padding: 1rem 1.15rem;
+    border-top: 0.06rem solid rgba(97, 43, 52, 0.12);
+    text-align: left;
+  }
+
+  .skill-table th {
+    border-top: 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  .skill-table td::before {
+    content: none;
+  }
+
+  .skill-table th:nth-child(1),
+  .skill-table td:nth-child(1) {
+    width: 24%;
+  }
+
+  .skill-table th:nth-child(2),
+  .skill-table td:nth-child(2) {
+    width: 16%;
+  }
+
+  .skill-table th:nth-child(3),
+  .skill-table td:nth-child(3) {
+    width: 18%;
+  }
+
+  .skill-table th:nth-child(4),
+  .skill-table td:nth-child(4) {
+    width: 42%;
+  }
 }
 
 /* =========================================================
