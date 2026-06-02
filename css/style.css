@@ -117,27 +117,19 @@ p {
 
 .brand {
   display: inline-flex;
+  flex: 0 0 auto;
   align-items: center;
-  gap: 0.5rem;
   color: var(--color-bg);
   font-size: 0.9rem;
   font-weight: 500;
 }
 
-.brand-mark {
-  display: grid;
-  width: 2rem;
-  height: 2rem;
-  place-items: center;
-  color: var(--color-button);
-  background: var(--color-nav);
-  border-radius: 50%;
-  box-shadow: 0 0.2rem 0.55rem rgba(84, 17, 31, 0.22);
-  font-size: 0.72rem;
-}
-
-.brand-name {
-  line-height: 1;
+.brand-logo {
+  width: auto;
+  height: clamp(2.55rem, calc(var(--header-height) - 0.2rem), 3.15rem);
+  max-width: min(12rem, 46vw);
+  object-fit: contain;
+  filter: drop-shadow(0 0.2rem 0.55rem rgba(84, 17, 31, 0.22));
 }
 
 .nav-checkbox {
